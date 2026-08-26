@@ -3,25 +3,24 @@
    "how to change link color." */
 
 body {
-  
   background-color: black;
-  color:white ;
-  font-family:Papyrus;}
-
+  color: white;
+  font-family: Papyrus;
+}
 
 #left_right_button_container {
-background-color: transparent;
+  background-color: transparent;
 
-width: auto;
-height:auto;
-display: flex;
-justify-content: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
-            
+
 .squarehead {
-width: 1600px;
-height: 500px;
-border:5px white solid;
-background-color:transparent;
-margin:auto;
+  width: 1600px;
+  height: 500px;
+  border: 5px white solid;
+  background-color: transparent;
+  margin: auto;
 }
