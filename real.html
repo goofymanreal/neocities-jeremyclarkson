@@ -31,45 +31,79 @@
                 width: 400px;
                 height: 300px;
                 justify-self: center;
-                font-family: Comic sans MS;
+
                 font-size: 20px;
+            }
+            .title-bar-text {
+                width:auto;
+                height:auto;
+
+
+            }
+            .window-body{
+                width: auto;
+                height: auto;
+
             }
         </style>
 
         <script src="https://louisabraham.github.io/nekojs/neko.js" data-autostart></script>
     </head>
     <body>
-        <h2 style="text-align: center"><a href="real.html">here</a>|<a href="music.html">music</a></h2>
-        <hr />
-        <h2 style="text-align: center">welcome to my actual website!</h2>
-        <hr />
-
-        <div class="left_right_button_container">
+        <div class="title-bar" height="1px">
+            <div class="title-bar-text">welcome to my actual website!</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+       <div class="window" style="width: 300px">
+  <div class="title-bar">
+    <div class="title-bar-text">A Window With Stuff In It</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+     <div class="left_right_button_container">
             <p class="tenna_gif" style="text-align: left"><img src="gif/h.gif" alt="logo" /></p>
             <div class="tg_divider"></div>
             <p class="tenna_gif" style="text-align: left"><img src="gif/h.gif" alt="logo" /></p>
         </div>
 
         <div class="window">
-            <br />
-
-            <p style="text-align: center">
-                hi im jordan
-                <br />
-                mediocre drummer
-                <br />
-                bad guitarist
-                <br />
-                decent bassist
-                <br />
-                youtuber
-                <br />
-                17, audhd
-                <br />
-                probably other stuff too haouihso
-                <br />
-            </p>
+            <div class="title-bar">
+                <div class="title-bar-text">welcome!</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <p style="text-align: center">
+                    hi im jordan
+                    <br />
+                    mediocre drummer
+                    <br />
+                    bad guitarist
+                    <br />
+                    decent bassist
+                    <br />
+                    youtuber
+                    <br />
+                    17, audhd
+                    <br />
+                    probably other stuff too haouihso
+                    <br />
+                </p>
+                <div class="field-row"></div>
+            </div>
         </div>
+
         <div class="left_right_button_container">
             <p class="tenna_gif" style="text-align: left">
                 <img src="gif/h.gif" alt="logo" />
@@ -79,5 +113,8 @@
                 <img src="gif/h.gif" alt="logo" />
             </p>
         </div>
+  </div>
+</div>
+
     </body>
 </html>
