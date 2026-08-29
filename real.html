@@ -41,7 +41,7 @@
             }
 
             .milk9 {
-                height: 700px;
+                height: 7/00px;
                 width: 250px;
                 justify-self: right;
             }
@@ -52,15 +52,56 @@
             }
             .window {
                 width: 1850px;
-                height: 900px;
+                height: 850px;
                 justify-self: center;
                 font-size: 35px;
+            }
+            .tabs {
+                width: auto;
+                height: 30px;
+                margin-left:24px;
             }
         </style>
 
         <script src="https://louisabraham.github.io/nekojs/neko.js" data-autostart></script>
     </head>
     <body>
+        <section class="tabs" style="max-width: 500px hei">
+            <p role="tablist" aria-label="Sample Tabs">
+                <button role="tab" aria-selected="true" aria-controls="tab-A">about me</button>
+                <button role="tab" aria-controls="tab-B">music</button>
+                <button role="tab" aria-controls="tab-C">other projects</button>
+            </p>
+            <!-- the tab content -->
+            <article role="tabpanel" id="tab-A"></article>
+            <article role="tabpanel" hidden id="tab-B">
+                <h3>More...</h3>
+                <p>This tab contains a GroupBox</p>
+                <fieldset>
+                    <legend>Today's mood</legend>
+                    <div class="field-row">
+                        <input id="radio10" type="radio" name="fieldset-example2" />
+                        <label for="radio10">Claire Saffitz</label>
+                    </div>
+                    <div class="field-row">
+                        <input id="radio11" type="radio" name="fieldset-example2" />
+                        <label for="radio11">Brad Leone</label>
+                    </div>
+                    <div class="field-row">
+                        <input id="radio12" type="radio" name="fieldset-example2" />
+                        <label for="radio12">Chris Morocco</label>
+                    </div>
+                    <div class="field-row">
+                        <input id="radio13" type="radio" name="fieldset-example2" />
+                        <label for="radio13">Carla Lalli Music</label>
+                    </div>
+                </fieldset>
+            </article>
+            <article role="tabpanel" hidden id="tab-C">
+                <h3>Tab 3</h3>
+                <p>Lorem Ipsum Dolor Sit</p>
+            </article>
+        </section>
         <div class="window">
             <div class="title-bar">
                 <div class="title-bar-text">welcome to my actual website!</div>
@@ -79,15 +120,15 @@
 
                 <div class="SecondContainer">
                     <div class="SubContainer1">
-                        <img src="gif/h.gif" class="tenna_gif" alt="logo"  />
+                        <img src="gif/h.gif" class="tenna_gif" alt="logo" />
                         <div class="tg_divider"></div>
                         <img src="gif/h.gif" class="tenna_gif" alt="logo" />
                     </div>
 
                     <p style="text-align: center">
-                          <br />
-                         <br />
-                         <br />
+                        <br />
+                        <br />
+                        <br />
                         hi im jordan
                         <br />
                         mediocre drummer
