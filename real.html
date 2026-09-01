@@ -61,11 +61,23 @@
                 height: 30px;
                 margin-left: 25px;
             }
+            #background {
+                margin-top: -8px;
+                right: 1px;
+                padding: 0px;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: -1;
+            }
         </style>
 
         <script src="https://louisabraham.github.io/nekojs/neko.js" data-autostart></script>
     </head>
     <body>
+        <img
+            id="background"
+            src="https://cdn.jsdelivr.net/gh/goofymanreal/neocities-jeremyclarkson/jpg/windowsxp.jpg" />
         <section class="tabs" style="max-width: 500px hei">
             <button role="tab" style="width: 616px" aria-selected="true" aria-controls="tab-A">about me</button>
             <button onclick="location.href='youtube.html'" role="tab" style="width: 616px" aria-controls="tab-B">
@@ -79,7 +91,7 @@
             <div class="title-bar">
                 <div class="title-bar-text">welcome to my actual website!</div>
                 <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
+                    <button onclick="location.href='bgview.html'" role="tab" aria-label="Minimize"></button>
                     <button aria-label="Maximize"></button>
                     <button onclick="location.href='index.html'" aria-label="Close"></button>
                 </div>
