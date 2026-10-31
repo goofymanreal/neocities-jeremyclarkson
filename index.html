@@ -3,48 +3,106 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>welcome</title>
+        <title>hi</title>
+        <link rel="stylesheet" href="https://unpkg.com/98.css" />
+        <style>
+            body {
+                background-color: #3b6ea5;
+                color: white;
+                font-family: Comic sans MS;
+            }
+            .PrimeContainer {
+                background-color: transparent;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .SecondContainer {
+                background-color: transparent;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .SubContainer1 {
+                background-color: transparent;
+                width: 200px;
+                height: 500px;
+            }
+            .tenna_gif {
+                width: 200px;
+                height: 200px;
+            }
+            .tg_divider {
+                background-color: transparent;
+                width: 100px;
+                height: 200px;
+            }
 
-<style>
-    body {
-  background-color: black;
-  color: white;
-  font-family: Papyrus;
-}
+            .milk9 {
+                height: 700px;
+                width: 250px;
+                justify-self: right;
+            }
+            .throngler {
+                height: 700px;
+                width: 250px;
+                justify-self: left;
+            }
+            .window {
+                width: 1850px;
+                height: 850px;
+                justify-self: center;
+                font-size: 35px;
+            }
+            .tabs {
+                width: auto;
+                height: 30px;
+                margin-left: 25px;
+            }
+            #background {
+                margin-top: -8px;
+                right: 1px;
+                padding: 0px;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: -1;
+            }
+        </style>
 
-#left_right_button_container {
-  background-color: transparent;
-
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.squarehead {
-  width: 1600px;
-  height: 500px;
-  border: 5px white solid;
-  background-color: transparent;
-  margin: auto;
-}
-</style>
         <script src="https://louisabraham.github.io/nekojs/neko.js" data-autostart></script>
     </head>
     <body>
-        <hr />
-        <h1 style="text-align: center">welcome</h1>
-        <hr />
-        <div class="squarehead">
-                    <p style=text-align:center>  <button onclick="location.href='chromebookindex.html'"> press this if your on chromebook, proportions might be a bit off, mb</button>
+        <img
+            id="background"
+            src="https://cdn.jsdelivr.net/gh/goofymanreal/neocities-jeremyclarkson/jpg/windowsxp.jpg" />
 
-            <div id="left_right_button_container">
-                <a href="joke.html">
-                    <img src="gif/h.gif" alt="logo" height="250px" width="600px" />
-                </a>
-                <a href="real.html">
-                    <img src="gif/NOW.gif" alt="logo" height="250px" width="600px" />
-                </a>
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">welcome to my actual website!</div>
+                <div class="title-bar-controls">
+                    <button onclick="location.href='bgview.html'" role="tab" aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button onclick="location.href='index.html'" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="PrimeContainer">
+                <div class="SecondContainer">
+                    <div class="SubContainer1">
+                        <img src="gif/h.gif" class="tenna_gif" alt="logo" />
+                        <div class="tg_divider"></div>
+                        <img src="gif/h.gif" class="tenna_gif" alt="logo" />
+                    </div>
+
+                    <div class="SubContainer1">
+                        <img src="gif/h.gif" class="tenna_gif" alt="logo" />
+                        <div class="tg_divider"></div>
+                        <img src="gif/h.gif" class="tenna_gif" alt="logo" />
+                    </div>
+                </div>
             </div>
         </div>
     </body>
