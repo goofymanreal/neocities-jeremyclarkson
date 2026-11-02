@@ -5,7 +5,7 @@
  */
 
 /* ===== FONTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=MS+Sans+Serif:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MS+Sans+Serif:wght@400;700&display=swap");
 
 /* ===== CSS CUSTOM PROPERTIES (THEMES) ===== */
 :root {
@@ -27,13 +27,14 @@
     --selection-bg: rgba(0, 0, 128, 0.3);
     --selection-border: white;
 }
- #background {
-                margin-top: -8px;
-                right: 1px;
-                height: 100%;
-                width: 100%;
-                position: absolute;
-     z-index: -1;}
+#background {
+    margin-top: -8px;
+    right: 1px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
 /* Pastel Pink Theme */
 :root[data-theme="pink"] {
     --desktop-bg: #f8bbd9;
@@ -84,7 +85,7 @@
 
 :root[data-theme="cyberpunk"] .window {
     box-shadow:
-        2px 2px  rgba(0,0,0,0.5),
+        2px 2px rgba(0, 0, 0, 0.5),
         0 0 20px rgba(255, 0, 255, 0.3),
         inset 0 0 0 1px rgba(0, 255, 255, 0.2);
 }
@@ -176,7 +177,7 @@
 }
 
 body {
-    font-family: 'MS Sans Serif', sans-serif;
+    font-family: "MS Sans Serif", sans-serif;
     font-size: 11px;
     overflow: hidden;
     height: 100vh;
@@ -244,7 +245,7 @@ body {
     color: white;
     font-size: 11px;
     text-align: center;
-    text-shadow: 1px 1px  #000;
+    text-shadow: 1px 1px #000;
     word-wrap: break-word;
     max-width: 70px;
     line-height: 1.2;
@@ -259,14 +260,14 @@ body {
     min-height: 150px;
     z-index: 1000;
     display: none;
-    box-shadow: 2px 2px  rgba(0,0,0,0.5);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     resize: both;
     overflow: hidden;
 }
 
 /* ===== RESIZE HANDLE ===== */
 .window::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     bottom: 0;
@@ -276,11 +277,24 @@ body {
     border-left: 1px solid var(--window-border-dark);
     border-top: 1px solid var(--window-border-dark);
     cursor: se-resize;
-    background-image:
-        linear-gradient(45deg, transparent 30%, var(--window-border-dark) 30%, var(--window-border-dark) 35%, transparent 35%),
-        linear-gradient(45deg, transparent 60%, var(--window-border-dark) 60%, var(--window-border-dark) 65%, transparent 65%);
+    background-image: linear-gradient(
+            45deg,
+            transparent 30%,
+            var(--window-border-dark) 30%,
+            var(--window-border-dark) 35%,
+            transparent 35%
+        ),
+        linear-gradient(
+            45deg,
+            transparent 60%,
+            var(--window-border-dark) 60%,
+            var(--window-border-dark) 65%,
+            transparent 65%
+        );
     background-size: 4px 4px;
-    background-position: 0 0, 2px 2px;
+    background-position:
+        0 0,
+        2px 2px;
     z-index: 10;
 }
 
@@ -337,7 +351,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: var(--text-color);
-    font-family: 'MS Sans Serif', sans-serif;
+    font-family: "MS Sans Serif", sans-serif;
 }
 
 .window-button:hover {
@@ -445,7 +459,7 @@ body {
     padding: 2px 8px;
     border: 1px inset var(--button-bg);
     margin: 2px;
-    font-family: 'MS Sans Serif', sans-serif;
+    font-family: "MS Sans Serif", sans-serif;
     font-size: 11px;
     height: 22px;
     display: flex;
@@ -465,7 +479,7 @@ body {
     border: 2px outset var(--window-bg);
     display: none;
     z-index: 10000;
-    box-shadow: 2px 2px  rgba(0,0,0,0.5);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .start-menu.visible {
@@ -523,7 +537,7 @@ body {
     padding: 4px 16px;
     cursor: pointer;
     font-size: 11px;
-    font-family: 'MS Sans Serif', sans-serif;
+    font-family: "MS Sans Serif", sans-serif;
     margin: 4px;
     color: var(--text-color);
 }
@@ -562,30 +576,38 @@ body {
 }
 
 /* ===== FORM ELEMENTS ===== */
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
     border: 1px inset var(--window-bg);
     padding: 2px 4px;
-    font-family: 'MS Sans Serif', sans-serif;
+    font-family: "MS Sans Serif", sans-serif;
     font-size: 11px;
     background: var(--white);
     color: var(--text-color);
 }
 
-button, input[type="button"], input[type="submit"] {
+button,
+input[type="button"],
+input[type="submit"] {
     background: var(--button-bg);
     border: 1px outset var(--button-bg);
     padding: 4px 12px;
     cursor: pointer;
     font-size: 11px;
-    font-family: 'MS Sans Serif', sans-serif;
+    font-family: "MS Sans Serif", sans-serif;
     color: var(--text-color);
 }
 
-button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
     background: var(--button-hover);
 }
 
-button:active, input[type="button"]:active, input[type="submit"]:active {
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
     border: 1px inset var(--button-bg);
 }
 
@@ -841,7 +863,6 @@ button:active, input[type="button"]:active, input[type="submit"]:active {
     }
 
     /* Improve scrolling on mobile */
-
 }
 
 /* Small mobile styles (up to 480px) */
@@ -985,7 +1006,7 @@ button:active, input[type="button"]:active, input[type="submit"]:active {
 }
 
 .crt-effect::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -995,8 +1016,8 @@ button:active, input[type="button"]:active, input[type="submit"]:active {
         0deg,
         transparent,
         transparent 2px,
-        rgba(0,0,0,0.03) 2px,
-        rgba(0,0,0,0.03) 4px
+        rgba(0, 0, 0, 0.03) 2px,
+        rgba(0, 0, 0, 0.03) 4px
     );
     pointer-events: none;
 }
