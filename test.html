@@ -26,41 +26,26 @@
         <div class="desktop-icons">
             <!-- Icon 1: About -->
             <div class="icon" onclick="openWindow('about')">
-                <div class="icon-image">
-                    <i class="fas fa-user"></i>
-                </div>
-                <span class="icon-text">About Me</span>
+                <img src="jpg/aboutme.png" style="width: 35px" />
+                <p style="margin-top: 4px" class="icon-text">About Me</p>
             </div>
 
             <!-- Icon 2: Projects -->
             <div class="icon" onclick="openWindow('projects')">
-                <div class="icon-image">
-                    <i class="fas fa-folder"></i>
-                </div>
-                <span class="icon-text">My Projects</span>
+                <img src="jpg/projects.png" style="width: 35px" />
+                <p style="margin-top: 4px" class="icon-text">Projects</p>
             </div>
 
             <!-- Icon 3: Calculator -->
             <div class="icon" onclick="openWindow('calculator')">
-                <div class="icon-image">
-                    <i class="fas fa-calculator"></i>
-                </div>
+                <img src="jpg/calctempt.png" style="width: 35px" />
+
                 <span class="icon-text">Calculator</span>
             </div>
 
-            <!-- Icon 4: Themes -->
-            <div class="icon" onclick="openWindow('themes')">
-                <div class="icon-image">
-                    <i class="fas fa-palette"></i>
-                </div>
-                <span class="icon-text">Themes (broken) </span>
-            </div>
-
-            <!-- Icon 5: Notepad -->
+            <!-- Icon 4: Notepad -->
             <div class="icon" onclick="openWindow('notepad')">
-                <div class="icon-image">
-                    <i class="fas fa-edit"></i>
-                </div>
+                <img src="jpg/notepadtemp.png" style="width: 35px" />
                 <span class="icon-text">Notepad</span>
             </div>
         </div>
@@ -71,7 +56,7 @@
 
         <div class="window" id="about-window" style="top: 50px; left: 100px; width: 450px; height: 350px">
             <div class="title-bar">
-                <div class="title-bar-text">welcome to my actual website!</div>
+                <div class="title-bar-text">welcome</div>
                 <div class="title-bar-controls">
                     <button role="tab" aria-label="Minimize" onclick="minimizeWindow('about')"></button>
                     <button role="tab" aria-label="Maximize" onclick="maximizeWindow('about')"></button>
@@ -156,126 +141,6 @@
                     <button onclick="calcInput('0')" style="grid-column: span 2">0</button>
                     <button onclick="calcInput('.')">.</button>
                     <button onclick="calcEqual()">=</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Themes Window -->
-        <div class="window" id="themes-window" style="top: 110px; left: 200px; width: 350px; height: 400px">
-            <div class="window-header">
-                <span class="window-title">Display Properties</span>
-                <div class="window-controls">
-                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('themes')">_</a>
-                    <a href="#" class="window-button maximize-btn" onclick="maximizeWindow('themes')">□</a>
-                    <a href="#" class="window-button close-btn" onclick="closeWindow('themes')">×</a>
-                </div>
-            </div>
-            <div class="window-content">
-                <h3>Desktop Themes</h3>
-                <p>Choose a color scheme for your desktop:</p>
-                <br />
-
-                <div style="border: 1px inset #c0c0c0; padding: 8px; background: #f0f0f0; margin-bottom: 10px">
-                    <h4>Available Themes:</h4>
-                    <div style="margin: 8px 0">
-                        <input
-                            type="radio"
-                            id="default-theme"
-                            name="theme"
-                            value="default"
-                            checked
-                            onchange="previewTheme('default')" />
-                        <label for="default-theme">Windows Standard</label>
-                    </div>
-                    <div style="margin: 8px 0">
-                        <input type="radio" id="pink-theme" name="theme" value="pink" onchange="previewTheme('pink')" />
-                        <label for="pink-theme">Pastel Pink</label>
-                    </div>
-                    <div style="margin: 8px 0">
-                        <input
-                            type="radio"
-                            id="cyberpunk-theme"
-                            name="theme"
-                            value="cyberpunk"
-                            onchange="previewTheme('cyberpunk')" />
-                        <label for="cyberpunk-theme">Cyberpunk</label>
-                    </div>
-                    <div style="margin: 8px 0">
-                        <input
-                            type="radio"
-                            id="lilac-theme"
-                            name="theme"
-                            value="lilac"
-                            onchange="previewTheme('lilac')" />
-                        <label for="lilac-theme">Lilac</label>
-                    </div>
-                    <div style="margin: 8px 0">
-                        <input
-                            type="radio"
-                            id="green-theme"
-                            name="theme"
-                            value="green"
-                            onchange="previewTheme('green')" />
-                        <label for="green-theme">Forest Green</label>
-                    </div>
-                </div>
-
-                <div style="border: 1px inset #c0c0c0; padding: 8px; background: #f0f0f0">
-                    <h4>Preview:</h4>
-                    <div
-                        id="theme-preview"
-                        style="border: 1px solid #808080; height: 100px; margin: 8px 0; position: relative">
-                        <div
-                            id="preview-desktop"
-                            style="width: 100%; height: 100%; background: #008080; position: relative">
-                            <div
-                                id="preview-window"
-                                style="
-                                    background: #c0c0c0;
-                                    border: 1px outset #c0c0c0;
-                                    margin: 10px;
-                                    padding: 0;
-                                    width: 120px;
-                                    position: absolute;
-                                ">
-                                <div
-                                    id="preview-titlebar"
-                                    style="
-                                        background: linear-gradient(90deg, #000080 0%, #0040c0 100%);
-                                        color: white;
-                                        padding: 2px 4px;
-                                        font-size: 9px;
-                                        font-weight: bold;
-                                    ">
-                                    Sample Window
-                                </div>
-                                <div
-                                    id="preview-content"
-                                    style="padding: 4px; font-size: 9px; color: #000000; background: #c0c0c0">
-                                    This is a preview of the selected theme.
-                                </div>
-                                <div
-                                    id="preview-button"
-                                    style="
-                                        background: #c0c0c0;
-                                        border: 1px outset #c0c0c0;
-                                        margin: 4px;
-                                        padding: 2px 8px;
-                                        font-size: 8px;
-                                        display: inline-block;
-                                    ">
-                                    Button
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <br />
-                <div class="center">
-                    <button onclick="applyCurrentTheme()">Apply</button>
-                    <button onclick="applyCurrentTheme(); closeWindow('themes');">OK</button>
-                    <button onclick="resetTheme()">Reset</button>
                 </div>
             </div>
         </div>
