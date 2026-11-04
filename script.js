@@ -225,8 +225,8 @@ function calcEqual() {
 
 function initDragAndDrop() {
     document.addEventListener('mousedown', function(e) {
-        const header = e.target.closest('.window-header');
-        if (header && !e.target.closest('.window-controls')) {
+        const header = e.target.closest('.title-bar');
+        if (header && !e.target.closest('.title-bar-controls')) {
             draggedElement = header.parentElement;
             const rect = draggedElement.getBoundingClientRect();
             offset.x = e.clientX - rect.left;

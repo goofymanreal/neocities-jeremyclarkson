@@ -53,7 +53,7 @@
                 <div class="icon-image">
                     <i class="fas fa-palette"></i>
                 </div>
-                <span class="icon-text">Themes</span>
+                <span class="icon-text">Themes (broken) </span>
             </div>
 
             <!-- Icon 5: Notepad -->
@@ -68,13 +68,14 @@
         <!-- WINDOWS -->
 
         <!-- About Window -->
+
         <div class="window" id="about-window" style="top: 50px; left: 100px; width: 450px; height: 350px">
-            <div class="window-header">
-                <span class="window-title">About Me</span>
-                <div class="window-controls">
-                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('about')">_</a>
-                    <a href="#" class="window-button maximize-btn" onclick="maximizeWindow('about')">□</a>
-                    <a href="#" class="window-button close-btn" onclick="closeWindow('about')">×</a>
+            <div class="title-bar">
+                <div class="title-bar-text">welcome to my actual website!</div>
+                <div class="title-bar-controls">
+                    <button role="tab" aria-label="Minimize" onclick="minimizeWindow('about')"></button>
+                    <button role="tab" aria-label="Maximize" onclick="maximizeWindow('about')"></button>
+                    <button role="tab" aria-label="Close" onclick="closeWindow('about')"></button>
                 </div>
             </div>
             <div class="window-content">
@@ -100,26 +101,28 @@
 
         <!-- Projects Window -->
         <div class="window" id="projects-window" style="top: 80px; left: 150px; width: 500px; height: 400px">
-            <div class="window-header">
-                <span class="window-title">My Projects</span>
-                <div class="window-controls">
-                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('projects')">_</a>
-                    <a href="#" class="window-button maximize-btn" onclick="maximizeWindow('projects')">□</a>
-                    <a href="#" class="window-button close-btn" onclick="closeWindow('projects')">×</a>
+            <div class="title-bar">
+                <div class="title-bar-text">Projects</div>
+                <div class="title-bar-controls">
+                    <button role="tab" aria-label="Minimize" onclick="minimizeWindow('projects')"></button>
+                    <button role="tab" aria-label="Maximize" onclick="maximizeWindow('projects')"></button>
+                    <button role="tab" aria-label="Close" onclick="closeWindow('projects')"></button>
                 </div>
             </div>
+
             <div class="window-content" style="padding: 0">
                 <iframe title="a" src="https://example.com" width="100%" height="100%" style="border: none"> </iframe>
             </div>
         </div>
 
         <!-- Calculator Window -->
-        <div class="window" id="calculator-window" style="top: 80px; left: 150px; width: 200px; height: 300px">
-            <div class="window-header">
-                <span class="window-title">Calculator</span>
-                <div class="window-controls">
-                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('calculator')">_</a>
-                    <a href="#" class="window-button close-btn" onclick="closeWindow('calculator')">×</a>
+        <div class="window" id="calculator-window" style="top: 80px; left: 150px; width: 500px; height: 400px">
+            <div class="title-bar">
+                <div class="title-bar-text">Calculator</div>
+                <div class="title-bar-controls">
+                    <button role="tab" aria-label="Minimize" onclick="minimizeWindow('calculator')"></button>
+                    <button role="tab" aria-label="Maximize" onclick="maximizeWindow('calculator')"></button>
+                    <button role="tab" aria-label="Close" onclick="closeWindow('calculator')"></button>
                 </div>
             </div>
             <div class="window-content" style="padding: 4px">
@@ -278,13 +281,13 @@
         </div>
 
         <!-- Notepad Window -->
-        <div class="window" id="notepad-window" style="top: 140px; left: 250px; width: 400px; height: 300px">
-            <div class="window-header">
-                <span class="window-title">Untitled - Notepad</span>
-                <div class="window-controls">
-                    <a href="#" class="window-button minimize-btn" onclick="minimizeWindow('notepad')">_</a>
-                    <a href="#" class="window-button maximize-btn" onclick="maximizeWindow('notepad')">□</a>
-                    <a href="#" class="window-button close-btn" onclick="closeWindow('notepad')">×</a>
+        <div class="window" id="notepad-window" style="top: 80px; left: 150px; width: 500px; height: 400px">
+            <div class="title-bar">
+                <div class="title-bar-text">Notepad</div>
+                <div class="title-bar-controls">
+                    <button role="tab" aria-label="Minimize" onclick="minimizeWindow('notepad')"></button>
+                    <button role="tab" aria-label="Maximize" onclick="maximizeWindow('notepad')"></button>
+                    <button role="tab" aria-label="Close" onclick="closeWindow('notepad')"></button>
                 </div>
             </div>
             <div class="window-content" style="padding: 0">
@@ -315,8 +318,8 @@ Try typing something!</textarea
         <!-- TASKBAR -->
         <div class="taskbar">
             <div class="start-button" onclick="toggleStartMenu()">
-                <i class="fab fa-windows"></i>
-                Start
+                <img src="jpg/wingows.png" style="margin-bottom: 5px" />
+                <img src="jpg/start.png" style="margin-bottom: 5px" />
             </div>
 
             <div class="taskbar-items" id="taskbar-items">
